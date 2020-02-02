@@ -1,0 +1,16 @@
+{
+  "name": "nadia",
+  "version": "1.0.0",
+  "description": "NAD IA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build":"docker build -t jgwill/nadia .",
+    "docker-tag":"docker tag jgwill/nadia jgwill/nadia:latest",
+    "docker-push":"docker push jgwill/nadia:latest",
+    "release":"npm run docker-build && npm run docker-tag && npm run docker-push && ginol \"Nadia Docker Built and Pushed\""
+  },
+  "keywords": ["nadia","docker","tensorflow"],
+  "author": "Guillaume Descoteaux-Isabelle",
+  "license": "MIT"
+}
