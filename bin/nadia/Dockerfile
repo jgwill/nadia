@@ -38,5 +38,6 @@ RUN pip install ipywidgets
 RUN pip install IProgress
 
 
+RUN apt install bash* -y
 
 #RUN jupyter notebook --port 8888 --no-browser
